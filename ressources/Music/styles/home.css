@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+:root{
+   --green:rgb(44, 149, 44);
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../ressources/backgroundhome2.jpeg);
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.nav{
+    border: white dashed 2px;
+    padding: 20px 20px;
+    font-size: 130%;
+    background-color: rgba(0, 0, 0, 0.501);
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.nav_item{
+    margin: 10px;
+}
+.nav_item:hover{
+    transform: translateY(20%) translateX(2%);
+    transition: all 1s ease;
+    text-shadow: 0 15px 5px rgba(255, 255, 255, 0.547);
+
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+footer{
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    left: -1500px;
+    height: 50px;
+    width: 300%;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.214);
+
+}
+
+footer article{
+    position: relative;
+    left: 0px;
+    animation: lol 10s infinite linear;
+}
+
+@keyframes lol{
+    100%{
+        left: 550px;
+    }
+  
+}

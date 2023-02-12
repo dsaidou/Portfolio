@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+:root{
+   --green:rgb(44, 149, 44);
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(../ressources/laylow.jpeg);
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar a:hover{
+    background-color: black;
+    color: white;
+    font-weight: 100;
+
+}
+
+.header{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin-top: 40px;
+    width: 100%;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.214);
+
+}
+
+.navbar{
+    width: 100%;
+}
+
+#right{
+    position: relative;
+    margin-left: 10px;
+    float: right;
+    color: var(--green);
+}
+
+.nav_item{
+    position: absolute;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 27px 10px 27px 10px;
+
+
+}
+
+.nav_item:hover{
+    background-color: black;
+    color: white;
+
+}
+
+#right:hover{
+    color: white;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: 500px;
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--green);
+}
+
+#title:hover{
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all ease .2s;
+}
+
+
+
+footer{
+    background-color: white;
+    position: absolute;
+    top: 85%;
+    left: -1500px;
+    height: 50px;
+    width: 300%;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.214);
+
+}
+
+footer article{
+    position: relative;
+    left: 0px;
+    animation: lol 10s infinite linear;
+}
+
+@keyframes lol{
+    100%{
+        left: 550px;
+    }
+  
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-right: 30px;
+    height: 1000px;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.aside{
+    float: right;
+    margin-top: 150px;
+    margin: 140px 10px 80px 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 400px;
+
+}
+
+.aside section{
+    border: solid white 3px;
+    margin: 10px;
+    background-color: rgba(62, 140, 48, 0.653);
+   
+}
+
+#image{
+    height: 360px;
+    width: 850px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#paragraph{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    padding: 20px;
+}
+
+#paragraph p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#paragraph a{
+    border-bottom: white solid 2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    float: right;
+}
+
+#paragraph a:hover{
+    font-style: italic;
+}
+
+
+
+
+
