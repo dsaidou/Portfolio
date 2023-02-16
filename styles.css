@@ -52,6 +52,13 @@ nav > a {
     font-weight: 700 ;
     color: black;
     margin: auto;
+    transition-property: border-bottom;
+    transition-duration: 2s linear;
+    transform-origin: bottom-left;
+}
+
+nav > a:hover{
+    border-bottom: black 4px solid;
 }
 
 /* .navbarElement {
