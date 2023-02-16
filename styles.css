@@ -54,14 +54,14 @@ nav > a {
     margin: auto;
 }
 
-.navbarElement {
+/* .navbarElement {
     position: absolute;
     top: 100%;
     background: red;
     width: 100%;
     height: 5%;
     z-index: 5;
-}
+} */
 
 nav a:nth-child(1) {
     position: relative;
