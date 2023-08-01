@@ -13,7 +13,7 @@ export default function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
      <Route element={<Root/>}>
-      <Route  path='/' element={<Homepage/>}/>
+      <Route  path='/Portfolio/' element={<Homepage/>}/>
       <Route  path='/Project' element={<Project/>}/>
       <Route  path='/About' element={<About/>}/>
      </Route>

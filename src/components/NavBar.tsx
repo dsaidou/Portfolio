@@ -43,7 +43,7 @@ export default function NavBar() {
       </Link>
         
         <Box width={{xs:'70%', md:'50%'}} display='flex' justifyContent='space-between' height='1.5em'>
-          <Link component={NavLink} color='text.primary'  sx={hoverBtn}underline='none' to='/'>Home</Link>
+          <Link component={NavLink} color='text.primary'  sx={hoverBtn}underline='none' to='/Portfolio/'>Home</Link>
           <Link component={NavLink} color='text.primary' sx={hoverBtn} underline='none' to='/About'>About</Link>
           <Link component={NavLink} color='text.primary' sx={hoverBtn} underline='none' to='/Project'>Project</Link>
         </Box>
