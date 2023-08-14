@@ -6,7 +6,7 @@ import ButtonCTA from "../components/ButtonCTA";
 export default function Project() {
   return (
     <section>
-      <Container sx={{display:'flex', flexDirection:'column', width:{xs:'60%', md:'60%'}, height:'100%', alignItems:'center', marginTop:5}}>
+      <Container sx={{display:'flex', flexDirection:'column', width:{xs:'100%', md:'60%'}, paddingX:{xs:'2em', md:'0'}, height:'100%', alignItems:'center', marginTop:5}}>
         <Box width='100%' height='fit-content' marginBottom={1}>
         <Typography variant='h1' sx={{fontWeight:'bold', color:'primary.main', mb:1}}> My projects</Typography>
         <Typography variant='h3' sx={{fontWeight:'light'}}>All my work</Typography>

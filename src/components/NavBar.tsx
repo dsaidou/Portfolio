@@ -33,8 +33,8 @@ export default function NavBar() {
 
   return (
 
-    <Box display='flex' width='100%' height='fit-content' justifyContent='center' alignItems='center' sx={{bgcolor:'background.default', borderColor:'neutral.dark', position:'sticky', top:0, zIndex:3}}>
-      <Container sx={{display:'flex',width:{xs:'80%', md:'60%'}, justifyContent:'space-between', alignItems:'center', my:2}}>
+    <Box display='flex' width='100%' height='fit-content' justifyContent='center' alignItems='center' sx={{bgcolor:'background.default', position:'sticky', top:0, zIndex:3, borderBottom:{xs:1, md:0}}}>
+      <Container sx={{display:'flex',width:{xs:'100%', md:'60%'}, justifyContent:'space-between', alignItems:'center', my:2, marginBottom:'0.5em'}}>
       <Link component={NavLink} underline='none' to='/'>
         <IconButton sx={{p:0 }}>
           <Typography variant='h1' color='primary.main' fontWeight='600' position='relative'>D</Typography>

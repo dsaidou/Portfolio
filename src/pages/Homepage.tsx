@@ -20,7 +20,7 @@ export default function Homepage() {
 
   return (
     <section>
-      <Container sx={{display:'flex', flexDirection:'column', width:{xs:'60%', md:'60%'}, height:'100%', alignItems:'center', marginTop:5}}>
+      <Container sx={{display:'flex', flexDirection:'column', width:{xs:'100%', md:'60%'}, height:'100%', alignItems:'center', marginTop:4, paddingX:{xs:'2em', md:'0'}}}>
 
         <Box width='100%' height='fit-content' marginBottom={6}>
 

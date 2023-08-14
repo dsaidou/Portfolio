@@ -16,14 +16,6 @@ body {
   width: 100%;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  border: lightcoral solid 1px;
-  background: #000;
-  font-weight: 300;
-}
-
 section {
   min-height: 90%;
   width: 100%;
