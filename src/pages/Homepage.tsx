@@ -20,9 +20,9 @@ export default function Homepage() {
 
   return (
     <section>
-      <Container sx={{display:'flex', flexDirection:'column', width:{xs:'100%', md:'60%'}, height:'100%', alignItems:'center', marginTop:4, paddingX:{xs:'2em', md:'0'}}}>
+      <Container sx={{display:'flex', flexDirection:'column', width:{xs:'100%', md:'60%'}, height:'100%', alignItems:'center', justifyContent:'center', marginTop:4, paddingX:{xs:'2em', md:'0'}}}>
 
-        <Box width='100%' height='fit-content' marginBottom={6}>
+        <Box width='100%' height='fit-content' marginBottom={6} display='flex' flexDirection='column' alignItems={{xs:'center', md:'flex-start'}}>
 
           <Typography variant='h1' sx={{fontWeight:'bold', color:'primary.main', mb:1}}> Dariya Saidou</Typography>
 
@@ -39,7 +39,7 @@ export default function Homepage() {
           <div className="bg-photo"></div>
         </motion.div>
 
-        <Box display='flex' height='fit-content' flexDirection='column' padding={2} marginLeft={{md:5, sm:0, xs:0}} marginTop={{xs:4, md:0, sm:0}}>
+        <Box display='flex' height='fit-content' flexDirection='column' padding={2} marginLeft={{md:5, sm:0, xs:0}} marginTop={{xs:4, md:0, sm:0}} alignItems={{xs:'center', md:'flex-start'}}>
 
           <Typography variant="h1" my={3} fontWeight='bold'> Welcome, I am Dariya !</Typography>
 
