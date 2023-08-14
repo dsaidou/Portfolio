@@ -36,7 +36,7 @@ export default function NavBar() {
     <Box display='flex' width='100%' height='fit-content' justifyContent='center' alignItems='center' sx={{bgcolor:'background.default', position:'sticky', top:0, zIndex:3, borderBottom:{xs:1, md:0}}}>
       <Container sx={{display:'flex',width:{xs:'100%', md:'60%'}, justifyContent:'space-between', alignItems:'center', my:2, marginBottom:'0.5em'}}>
       <Link component={NavLink} underline='none' to='/'>
-        <IconButton sx={{p:0 }}>
+        <IconButton component={NavLink} to='/Portfolio/' >
           <Typography variant='h1' color='primary.main' fontWeight='600' position='relative'>D</Typography>
           <Divider sx={{bgcolor:'background.default', width:'30px', height:'5px', position:'absolute',transform:'rotate(90deg)', m:{xs:2, sm:1, md:0} }}/>
         </IconButton>
