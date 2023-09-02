@@ -16,12 +16,14 @@ export const themeSettings = (mode:PaletteMode)=>({
         },
         secondary:{
           main: 'rgba(164, 115, 226, 1)',
-          hover: 'rgba(164, 115, 226, 0.5)'
+          hover: 'rgba(164, 115, 226, 0.5)',
+          default: 'rgba(164, 115, 226, 0.9)'
           
         },
         background:{
           default: '#F4F4F4',
-          main: 'D9D9D9'
+          main: 'rgba(164, 115, 226, 0.2)',
+
         },
         text:{
           primary: '#161616',
@@ -39,10 +41,12 @@ export const themeSettings = (mode:PaletteMode)=>({
       },
       secondary:{
         main: 'rgba(131, 93, 180, 1)',
-        hover: 'rgba(131, 93, 180, 0.5)'
+        hover: 'rgba(131, 93, 180, 0.5)',
+        default: 'rgba(131, 93, 180, 0.9)'
       },
       background:{
         default: '#161616',
+        main: 'rgba(131, 93, 180, 0.2)',
       },
       text:{
         primary: '#F4F4F4',

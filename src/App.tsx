@@ -12,10 +12,10 @@ export default function App() {
   const [theme, colorMode] = useMode();
   const router = createBrowserRouter(
     createRoutesFromElements(
-     <Route element={<Root/>}>
+     <Route element={<Root/>} >
       <Route  path='/Portfolio/' element={<Homepage/>}/>
-      <Route  path='/Project' element={<Project/>}/>
-      <Route  path='/About' element={<About/>}/>
+      <Route  path='/Portfolio/Project' element={<Project/>}/>
+      <Route  path='/Portfolio/About' element={<About/>}/>
      </Route>
     ))
 

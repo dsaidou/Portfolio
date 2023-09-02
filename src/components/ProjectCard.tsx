@@ -1,10 +1,12 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
 import { nanoid } from 'nanoid';
-import { motion } from 'framer-motion';
+// import { motion, useInView, useAnimation } from 'framer-motion';
+import{ motion } from 'framer-motion';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PastaLifeScreenshot from '../assets/PastaLifeScreenshot.png';
 import NaturalShopScreenshot from '../assets/NaturalShopScreenshot.png';
+// import { useEffect, useRef } from "react";
 
 
 export default function ProjectCard() {
@@ -47,6 +49,18 @@ export default function ProjectCard() {
         }
     ]
 
+    // ANIMATION CONTROL
+
+    // const ref = useRef(null);
+    // const isInView = useInView(ref, {once:true});
+    // const controls = useAnimation();
+
+    // useEffect(() => {
+    //     if(isInView) {
+    //        controls.start("visible") 
+    //     }
+    //     console.log(isInView)
+    // },[isInView]);
 
   return (
         <>
@@ -57,26 +71,37 @@ export default function ProjectCard() {
         mb={3} justifyContent='space-between' p={{xs:0, md:1,sm:0}} 
         key={item.id}
         component={motion.div}
-        initial={{x: '-110px', opacity: 0}}
+        initial={{x: '10px', opacity: 0}}
         animate={{x: '0', opacity:1, transition:{ duration: 0.5 }}}
+        // ref={ref}
+        // variants={{         
+        //     hidden:{x: '-10px', opacity: 0},
+        //     visible:{x: '0', opacity:1},
+        // }}
+        // initial="hidden"
+        // animate={controls}
+        // transition={{duration: 0.5}}
         >
+
             <Box
-        component="img"
-        sx={{
-          border:1,
-          borderColor:'primary.main',
-          borderRadius:'10px',
-          height: 233,
-          width: 330,
-          maxHeight: { xs: 140, md: 140 },
-          maxWidth: { xs: 260, md: 240 },
-        }}
-        alt={item.description}
-        src={item.image}/>
+                component="img"
+                sx={{
+                border:1,
+                borderColor:'primary.main',
+                borderRadius:'10px',
+                height: 233,
+                width: 330,
+                maxHeight: { xs: 140, md: 140 },
+                maxWidth: { xs: 260, md: 240 },
+                }}
+                alt={item.description}
+                loading="lazy"
+                src={item.image}
+            />
             
             <Box m={1} ml={{xs:0,sm:0, md:4 }}>
                 <Box display='flex' width="100%"
-                alignItems='center'>
+                alignItems='center' justifyContent={{sm:'left', xs:'center'}} >
                     <Typography component={Link} href={item.linkWebsite} target='_blank' underline='none' color='text.primary' variant="h5" sx={{fontWeight:'bold', mr:1, cursor:'pointer'}}>{item.name}</Typography>
 
                     <Link href={item.linkWebsite} target='_blank' component={motion.a}
@@ -92,7 +117,7 @@ export default function ProjectCard() {
                     </Link>
                 </Box>
                 
-                <Typography paragraph  fontWeight='light' mt={1} > {item.text} </Typography>
+                <Typography paragraph  textAlign={{sm:'left', xs:'center'}} fontWeight='light' mt={1} > {item.text} </Typography>
                 <Grid container width='100%' height='fit-content' >
                     {item.tech.map((item)=>{
                     return(
@@ -114,13 +139,13 @@ export default function ProjectCard() {
             mb={3} justifyContent='space-between' p={1} 
             key={item.id}
             component={motion.div}
-            initial={{x: '110px', opacity: 0}}
+            initial={{x: '10px', opacity: 0}}
             animate={{x: '0', opacity:1, transition:{ duration: 0.5 }}}
             >
             
-            <Box mr={4}>
+            <Box mr={4} m={1}>
                 <Box display='flex' width="100%"
-                alignItems='center'>
+                alignItems='center' justifyContent={{sm:'left', xs:'center'}}>
                     <Typography  component={Link} href={item.linkWebsite} target='_blank' underline='none' color='text.primary' variant="h5" sx={{fontWeight:'bold', mr:1, cursor:'pointer'}}>{item.name}</Typography>
 
                     <Link href={item.linkWebsite} target='_blank'
@@ -139,7 +164,7 @@ export default function ProjectCard() {
 
                 </Box>
                 
-                <Typography paragraph  fontWeight='light' mt={1} > {item.text} </Typography>
+                <Typography paragraph  textAlign={{sm:'left', xs:'center'}} fontWeight='light' mt={1} > {item.text} </Typography>
                 <Grid container width='100%' height='fit-content' >
                     {item.tech.map((item)=>{
                     return(
@@ -161,6 +186,7 @@ export default function ProjectCard() {
           maxWidth: { xs: 260, md: 240 },
         }}
         alt={item.description}
+        loading="lazy"
         src={item.image}/>
         
         </Box>

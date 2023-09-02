@@ -12,12 +12,12 @@ export default function GridLink() {
     const link = [
         {name:'Github', link:'https://github.com/dsaidou', icon:<GitHubIcon sx={{color:'background.default'}}/>, id:nanoid()},
         {name:'LinkedIn', link:'https://www.linkedin.com/in/dariyasaidou/', icon:<LinkedInIcon sx={{color:'background.default'}}/>, id:nanoid()},
-        {name:'CV', link:'/Alternance CV.pdf', icon:<DescriptionIcon sx={{color:'background.default'}}/>, id:nanoid()},
+        {name:'CV', link:'/Portfolio/Alternance CV.pdf', icon:<DescriptionIcon sx={{color:'background.default'}}/>, id:nanoid()},
         {name:'Mail', link:'mailto:saidoud818@gmail.com', icon:<EmailIcon sx={{color:'background.default'}}/>, id:nanoid()}
     ]
 
   return (
-    <Grid container width='100%' columns={{ xs: 6, sm:6,md: 12}}
+    <Grid container width={{md:'230px', xs:'100%'}} columns={{ xs: 6, sm:6,md: 12}}
         component={motion.div}
         initial={{y:'-50px', opacity: 0}}
         animate={{y:'0', opacity:1, transition:{ duration: 0.6 }}}>
@@ -28,6 +28,7 @@ export default function GridLink() {
                     "&:hover": {
                         backgroundColor: 'secondary.main'},
                  }}
+                 key={item.id}
                  >
                     <IconButton component={Link} href={item.link} target='_blank' >
                         {item.icon}
