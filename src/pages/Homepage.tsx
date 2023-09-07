@@ -62,7 +62,7 @@ export default function Homepage() {
 
           <Typography paragraph sx={{cursor:'default'}}>I love writing code and learn about new technologies. I am curious and always motivated by a new project because technologies are always evolving therefore i am ready to follow and learn in order to improve my skills. </Typography>
 
-          <ButtonCTA name='Learn more' link='/About'/>
+          <ButtonCTA name='Learn more' link='/Portfolio/About'/>
         </Box>
 
       </Box>

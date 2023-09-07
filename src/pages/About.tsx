@@ -30,7 +30,7 @@ export default function About() {
             <Typography paragraph textAlign={{sm:'left', xs:'center'}} sx={{cursor:'default'}} mb={3}>
             Currently, i am looking for an apprenticeship  in web developpement. I am always ready to use my knowledge and improve myself. 
             </Typography>
-            <ButtonCTA  name='View my project' link='/Project' />
+            <ButtonCTA  name='View my project' link='/Portfolio/Project' />
             
           </Grid>
 
